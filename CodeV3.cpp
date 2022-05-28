@@ -164,13 +164,13 @@ void loop(){
 
   int estadoBotao = digitalRead(botao);
 
-	if (estadoBotao == 0){
+  if (estadoBotao == 0){
     digitalWrite(pinBotao, HIGH);
   } else {
     digitalWrite(pinBotao, LOW);
   }
 
-	if (!estadoBotao){
+  if (!estadoBotao){
     if ((millis() - delay3) >= 1000){
       contador = contador - 1;
       delay3 = millis();
